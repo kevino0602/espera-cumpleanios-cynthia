@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    display: grid;
+    place-items: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://i.pinimg.com/originals/29/5b/30/295b30b9775e633a2af95492489a3644.png),
+    radial-gradient(#45eaf0,#ea39c3);;
+    background-size: 40% 40%;
+
+
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: #ff00c8;
+    text-shadow: 2px 2px 2px #fb6060;
+    font-size: 60px;
+    padding: 30px 10px;
+
+}
+p{
+    display: grid;
+    place-items: center;
+    border: solid 1px #54eaa2;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #6a2abe;
+    text-shadow: 1px 2px 9px #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #f446af;
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #6a2abe;
+    text-shadow: 1px 1px 9px #ffffff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    
+}
+.final-sms{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+    transition: ease-in-out 0.5s;
+    animation: colores infinite forwards 2s;
+    background-image: url(https://i.gifer.com/WS2k.gif);
+
+}
+.final-sms h2{
+    text-align: center;
+    font-size: 100px;
+    color: #000000;
+}
+
+@keyframes colores {
+    0% {
+        background-color: #634cf5;
+    }
+  
+    25% {
+        background-color: #4c9ef5;
+    }
+    50% {
+        background-color: #4cf5d6;
+    }
+    
+    75% {
+        background-color: #70f58f;
+    }
+    100% {
+        background-color: #f54ce4;
+    }
+    
+}
